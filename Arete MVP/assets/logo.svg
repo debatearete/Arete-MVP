@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="areteLogoTitle">
+  <title id="areteLogoTitle">Arete</title>
+  <rect width="64" height="64" rx="16" fill="#134A6E"/>
+  <g fill="#FBF9F4" transform="rotate(28 32 32)">
+    <path d="M32 8 36.8 32 32 56 27.2 32Z"/>
+    <path d="M10 32 32 27.8 54 32 32 36.2Z"/>
+  </g>
+</svg>

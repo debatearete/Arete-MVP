@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Review correction · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="profile-chip"><span class="avatar">JH</span> Jordan Hale</div>
+    </header>
+    <div class="app-body">
+      <aside class="sidebar">
+        <ul class="nav-list">
+          <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+          <li><a class="active" href="correction-review.html"><i class="fa-solid fa-code-compare"></i> Corrections</a></li>
+          <li><a href="leaderboard.html"><i class="fa-solid fa-trophy"></i> Leaderboard</a></li>
+        </ul>
+        <div class="sidebar-user"><span class="avatar lg">JH</span><div><strong>Jordan Hale</strong><br /><small>Instructor</small><small>Debate Academy</small></div></div>
+      </aside>
+      <main class="content">
+        <div class="page-wrap">
+          <div class="page-header">
+            <h1>Review correction</h1>
+            <p>Sarah Chen · This House Would ban advertising targeted at children · Submitted 27 Sep 2026</p>
+          </div>
+          <div class="split" style="margin-top: 20px">
+            <section class="card">
+              <h3>Original version</h3>
+              <div class="audio-player">
+                <p class="mono muted">0:45</p>
+                <div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div class="transcript">The motion is THW ban advertising targeted at children. Children are impressionable and companies just want profit. Advertising is bad for children because they see ads and then they want the product.</div>
+              <div class="actions-row">
+                <button class="btn btn-primary" type="button">Play</button>
+                <button class="btn btn-outline" type="button">Pause</button>
+                <button class="btn btn-ghost" type="button">Restart</button>
+              </div>
+            </section>
+            <section class="card">
+              <h3>Corrected version</h3>
+              <div class="audio-player">
+                <p class="mono muted">0:47</p>
+                <div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div class="transcript">Every day, 10,000 children in Hong Kong see advertisements for sugary drinks—drinks that bring them a step closer to health issues with every sip. Why are we letting corporations profit from this? Today I'll present three arguments: exploitation of vulnerability, harmful consumption habits, and why government is the right actor.</div>
+              <div class="actions-row">
+                <button class="btn btn-primary" type="button">Play</button>
+                <button class="btn btn-outline" type="button">Pause</button>
+                <button class="btn btn-ghost" type="button">Restart</button>
+              </div>
+            </section>
+          </div>
+          <section class="card" style="margin-top: 16px">
+            <h3>Add your feedback</h3>
+            <textarea style="width: 100%; min-height: 100px; margin: 12px 0; padding: 12px; border-radius: 10px; border: 1px solid var(--line)" placeholder="Type comments here..."></textarea>
+            <div class="actions-row">
+              <button class="btn btn-outline" type="button">Great job!</button>
+              <button class="btn btn-outline" type="button">Consider improving…</button>
+              <button class="btn btn-outline" type="button">This was good, but…</button>
+            </div>
+            <button class="btn btn-accent" type="button" onclick="openModal('fb-modal')" style="margin-top: 12px">Submit feedback</button>
+            <div class="feedback-item">
+              <strong>Previous comment · 2 days ago</strong>
+              <p class="muted">Stronger analysis on incentives. Opening still needs a hook — this is the right segment to rework.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div id="fb-modal" class="modal">
+      <div class="modal-card">
+        <h2>Feedback sent</h2>
+        <p class="muted" style="margin: 12px 0">Sarah will see this on her dashboard. Demo only.</p>
+        <a class="btn btn-primary" href="dashboard.html">Back to roster</a>
+      </div>
+    </div>
+    <script src="../js/interactions.js"></script>
+  </body>
+</html>

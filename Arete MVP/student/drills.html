@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drills · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="profile-chip"><span class="avatar">SC</span> Sarah Chen</div>
+    </header>
+    <div class="app-body">
+      <aside class="sidebar">
+        <ul class="nav-list">
+          <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+          <li><a href="practice.html"><i class="fa-solid fa-microphone"></i> Practice</a></li>
+          <li><a href="matter-test.html"><i class="fa-solid fa-file-lines"></i> Matter Tests</a></li>
+          <li><a class="active" href="drills.html"><i class="fa-solid fa-dumbbell"></i> Drills</a></li>
+          <li><a href="progress.html"><i class="fa-solid fa-chart-line"></i> Progress</a></li>
+        </ul>
+        <div class="sidebar-user"><span class="avatar lg">SC</span><div><strong>Sarah Chen</strong><br /><small>Student</small><small>Debate Academy</small></div></div>
+      </aside>
+      <main class="content">
+        <div class="page-wrap">
+          <div class="page-header">
+            <h1>Skill drills</h1>
+            <p>Sharpen specific debate skills</p>
+          </div>
+          <section class="card priority" style="margin-top: 20px">
+            <h2 style="margin: 0 0 10px">Rebuttal drill</h2>
+            <p>Identify and counter three arguments. For each, explain why it is (a) not true, (b) not relevant/important, and (c) even if the statement were true.</p>
+            <p style="margin: 12px 0"><strong>Motion:</strong> This House Would ban advertising targeted at children.</p>
+            <ol>
+              <li>Advertising only informs parents; children are not the real audience.</li>
+              <li>Bans restrict commercial free speech and harm media that relies on ad revenue.</li>
+              <li>Parents, not governments, should decide what children see.</li>
+            </ol>
+            <label class="muted" for="drill-response">Your Response</label>
+            <textarea id="drill-response" style="width: 100%; min-height: 120px; margin-top: 8px; padding: 12px; border-radius: 10px; border: 1px solid var(--line)">1. While some ads are aimed at parents, child-directed branding is designed to create pester power — so the child is the true target even if the parent pays.
+2. Commercial speech is already limited where harm is clear (tobacco). A targeted ban is narrower than “all advertising.”
+3. Even if parents should decide, they cannot realistically police every screen; a ban changes the default environment.</textarea>
+            <button class="btn btn-accent" type="button" onclick="openModal('drill-modal')" style="margin-top: 12px">Submit drill</button>
+          </section>
+          <div class="grid-4" style="margin-top: 20px">
+            <article class="card quick-card"><i class="fa-solid fa-list-ol"></i><strong>Structure drill</strong><span class="muted">Build a case</span><span class="pill green">Completed</span></article>
+            <article class="card quick-card"><i class="fa-solid fa-microphone"></i><strong>Delivery drill</strong><span class="muted">Tone and pacing</span><span class="pill yellow">New</span></article>
+            <article class="card quick-card"><i class="fa-solid fa-comments"></i><strong>Cross-examination</strong><span class="muted">POI practice</span><span class="pill yellow">New</span></article>
+            <article class="card quick-card"><i class="fa-solid fa-layer-group"></i><strong>Extension drill</strong><span class="muted">Deepen your analysis</span><span class="pill yellow">New</span></article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="drill-modal" class="modal">
+      <div class="modal-card">
+        <h2>Drill submitted</h2>
+        <p class="muted" style="margin: 12px 0">Your instructor can see this rebuttal set. Demo only — nothing is stored.</p>
+        <button class="btn btn-primary" type="button" onclick="closeModal('drill-modal')">Done</button>
+      </div>
+    </div>
+    <script src="../js/interactions.js"></script>
+  </body>
+</html>

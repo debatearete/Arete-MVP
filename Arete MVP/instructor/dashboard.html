@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instructor dashboard · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="topbar-actions">
+        <select aria-label="Organization" style="padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line)">
+          <option>Debate Academy</option>
+        </select>
+        <div class="profile-chip"><span class="avatar">JH</span> Jordan Hale</div>
+      </div>
+    </header>
+    <div class="app-body">
+      <aside class="sidebar">
+        <ul class="nav-list">
+          <li><a class="active" href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+          <li><a href="correction-review.html"><i class="fa-solid fa-code-compare"></i> Corrections</a></li>
+          <li><a href="leaderboard.html"><i class="fa-solid fa-trophy"></i> Leaderboard</a></li>
+        </ul>
+        <div class="sidebar-user"><span class="avatar lg">JH</span><div><strong>Jordan Hale</strong><br /><small>Instructor</small><small>Debate Academy</small></div></div>
+      </aside>
+      <main class="content">
+        <div class="page-wrap">
+          <div class="page-header">
+            <h1>Instructor dashboard</h1>
+            <p>Debate Academy</p>
+          </div>
+          <div class="stats-row">
+            <article class="card"><p class="muted">Total students</p><h2>45</h2></article>
+            <article class="card"><p class="muted">Active today</p><h2>12</h2></article>
+            <article class="card"><p class="muted">Pending corrections</p><h2>8</h2></article>
+            <article class="card"><p class="muted">Needs review</p><h2>3</h2></article>
+          </div>
+          <section class="card">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px">
+              <input type="search" placeholder="Search students" style="flex: 1; min-width: 200px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px" />
+              <div class="segmented">
+                <button class="active" type="button">All students</button>
+                <button type="button">Needs review</button>
+              </div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Student</th>
+                  <th>Last practice</th>
+                  <th>Matter score</th>
+                  <th>Corrections</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sarah Chen</td>
+                  <td>2 hours ago</td>
+                  <td>5/5</td>
+                  <td>3</td>
+                  <td><span class="pill green">Submitted</span></td>
+                  <td><a class="btn btn-primary" href="correction-review.html">Review</a></td>
+                </tr>
+                <tr>
+                  <td>Michael Wong</td>
+                  <td>5 hours ago</td>
+                  <td>5/5</td>
+                  <td>2</td>
+                  <td><span class="pill yellow">In progress</span></td>
+                  <td><a class="btn btn-outline" href="correction-review.html">Review</a></td>
+                </tr>
+                <tr>
+                  <td>Emily Zhang</td>
+                  <td>1 day ago</td>
+                  <td>4/5</td>
+                  <td>1</td>
+                  <td><span class="pill red">Needs review</span></td>
+                  <td><a class="btn btn-outline" href="correction-review.html">Review</a></td>
+                </tr>
+                <tr>
+                  <td>James Lee</td>
+                  <td>3 days ago</td>
+                  <td>4/5</td>
+                  <td>0</td>
+                  <td><span class="pill orange">Inactive</span></td>
+                  <td><button class="btn btn-outline" type="button">Message</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="muted" style="margin-top: 12px">1–4 of 45 students</p>
+          </section>
+
+          <section class="card" style="margin-top: 20px" aria-labelledby="drill-heading">
+            <h2 id="drill-heading" style="font-size: 1.2rem">Drill submissions</h2>
+            <table class="table" style="margin-top: 12px">
+              <thead>
+                <tr>
+                  <th>Student</th>
+                  <th>Drill</th>
+                  <th>Submitted</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sarah Chen</td>
+                  <td>Rebuttal</td>
+                  <td>1 hour ago</td>
+                  <td><span class="pill green">Submitted</span></td>
+                  <td><a class="btn btn-primary" href="drill-review.html">Review</a></td>
+                </tr>
+                <tr>
+                  <td>Michael Wong</td>
+                  <td>Structure</td>
+                  <td>4 hours ago</td>
+                  <td><span class="pill red">Needs review</span></td>
+                  <td><a class="btn btn-outline" href="drill-review.html">Review</a></td>
+                </tr>
+                <tr>
+                  <td>Emily Zhang</td>
+                  <td>Delivery</td>
+                  <td>Yesterday</td>
+                  <td><span class="pill yellow">Commented</span></td>
+                  <td><a class="btn btn-outline" href="drill-review.html">View</a></td>
+                </tr>
+                <tr>
+                  <td>James Lee</td>
+                  <td>Rebuttal</td>
+                  <td>—</td>
+                  <td><span class="pill orange">Not submitted</span></td>
+                  <td><button class="btn btn-outline" type="button">Message</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

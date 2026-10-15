@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Review drill · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="profile-chip"><span class="avatar">JH</span> Jordan Hale</div>
+    </header>
+    <div class="app-body">
+      <aside class="sidebar">
+        <ul class="nav-list">
+          <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+          <li><a href="correction-review.html"><i class="fa-solid fa-code-compare"></i> Corrections</a></li>
+          <li><a href="leaderboard.html"><i class="fa-solid fa-trophy"></i> Leaderboard</a></li>
+        </ul>
+        <div class="sidebar-user"><span class="avatar lg">JH</span><div><strong>Jordan Hale</strong><br /><small>Instructor</small><small>Debate Academy</small></div></div>
+      </aside>
+      <main class="content">
+        <div class="page-wrap">
+          <p><a class="btn btn-outline" href="dashboard.html">Back to dashboard</a></p>
+          <div class="page-header" style="margin-top: 16px">
+            <h1>Review drill</h1>
+            <p>Sarah Chen · Rebuttal · This House Would ban advertising targeted at children</p>
+          </div>
+          <section class="card" style="margin-top: 16px">
+            <h3>Task</h3>
+            <p class="muted" style="margin-top: 8px">Identify and counter three arguments. For each: (a) not true, (b) not relevant/important, (c) even if true.</p>
+            <ol>
+              <li>Advertising only informs parents; children are not the real audience.</li>
+              <li>Bans restrict commercial free speech and harm media that relies on ad revenue.</li>
+              <li>Parents, not governments, should decide what children see.</li>
+            </ol>
+          </section>
+          <section class="card" style="margin-top: 16px">
+            <h3>Submission</h3>
+            <div class="transcript" style="margin-top: 12px">1. While some ads are aimed at parents, child-directed branding is designed to create pester power — so the child is the true target even if the parent pays.
+2. Commercial speech is already limited where harm is clear (tobacco). A targeted ban is narrower than “all advertising.”
+3. Even if parents should decide, they cannot realistically police every screen; a ban changes the default environment.</div>
+          </section>
+          <section class="card" style="margin-top: 16px">
+            <h3>Add your feedback</h3>
+            <textarea style="width: 100%; min-height: 100px; margin: 12px 0; padding: 12px; border-radius: 10px; border: 1px solid var(--line)" placeholder="Type comments here..."></textarea>
+            <button class="btn btn-accent" type="button" onclick="openModal('fb-modal')">Submit feedback</button>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div id="fb-modal" class="modal">
+      <div class="modal-card">
+        <h2>Feedback sent</h2>
+        <p class="muted" style="margin: 12px 0">Sarah will see this on her dashboard.</p>
+        <a class="btn btn-primary" href="dashboard.html">Back to dashboard</a>
+      </div>
+    </div>
+    <script src="../js/interactions.js"></script>
+  </body>
+</html>

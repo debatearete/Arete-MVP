@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progress · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="profile-chip"><span class="avatar">SC</span> Sarah Chen</div>
+    </header>
+    <div class="app-body">
+      <aside class="sidebar">
+        <ul class="nav-list">
+          <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+          <li><a href="practice.html"><i class="fa-solid fa-microphone"></i> Practice</a></li>
+          <li><a href="matter-test.html"><i class="fa-solid fa-file-lines"></i> Matter Tests</a></li>
+          <li><a href="drills.html"><i class="fa-solid fa-dumbbell"></i> Drills</a></li>
+          <li><a class="active" href="progress.html"><i class="fa-solid fa-chart-line"></i> Progress</a></li>
+        </ul>
+        <div class="sidebar-user"><span class="avatar lg">SC</span><div><strong>Sarah Chen</strong><br /><small>Student</small><small>Debate Academy</small></div></div>
+      </aside>
+      <main class="content">
+        <div class="page-wrap">
+          <div class="page-header">
+            <h1>Your progress</h1>
+          </div>
+          <div class="stats-row">
+            <article class="card"><p class="muted">Practices</p><h2>23</h2><p class="muted">+3 this week</p></article>
+            <article class="card"><p class="muted">Tests completed</p><h2>12</h2></article>
+            <article class="card"><p class="muted">Average score</p><h2>72%<span class="stat-delta">↑ 5%</span></h2></article>
+            <article class="card"><p class="muted">Corrections submitted</p><h2>8</h2></article>
+          </div>
+          <div class="grid-2" style="margin-top: 16px">
+            <section class="card">
+              <h3>Streak</h3>
+              <p class="streak-stat">5-day streak</p>
+              <p class="muted">Longest: 9 days · This week: 3 days practiced</p>
+              <ul class="activity">
+                <li><span>Submitted correction</span><strong>3 hours ago</strong></li>
+                <li><span>Matter test score: 5/5</span><strong>1 day ago</strong></li>
+                <li><span>Feedback reviewed</span><strong>2 days ago</strong></li>
+              </ul>
+            </section>
+            <section class="card">
+              <h3>Achievements</h3>
+              <ul class="achieve-list">
+                <li><span class="pill green">Unlocked</span><span>First Speech · Streak Starter · Test Taker</span></li>
+                <li><span class="pill green">Unlocked</span><span>Perfect Score — 5/5 on this week's news test</span></li>
+                <li><span class="pill yellow">Locked</span><span>10-Day Streak · Master Debater</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

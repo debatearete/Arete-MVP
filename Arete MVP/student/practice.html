@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Practice · Arete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"><img src="../assets/logo.svg?v=aegean" alt="Arete logo" /> Arete</a>
+      <div class="topbar-actions">
+        <span class="pill blue">Practice session</span>
+        <div class="profile-chip"><span class="avatar">SC</span> Sarah Chen</div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="page-wrap">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+          <a class="btn btn-outline" href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
+          <h1>Practice session</h1>
+          <span></span>
+        </div>
+        <p style="margin: 12px 0 4px; font-size: 1.2rem; font-weight: 600">This House Would ban advertising targeted at children.</p>
+        <p class="muted">WSDC · 1st Proposition</p>
+
+        <div class="grid-2" style="margin-top: 20px">
+          <section class="card" aria-labelledby="prep-heading">
+            <h2 id="prep-heading" style="margin: 0 0 4px; font-size: 1.2rem">Prep time</h2>
+            <p class="timer-hero" id="prep-face">15:00</p>
+            <div class="progress"><span id="prep-bar" style="width: 0%"></span></div>
+            <div class="actions-row" style="justify-content: center">
+              <button class="btn btn-primary" type="button" onclick="startPrepTimer()">Start prep</button>
+              <button class="btn btn-outline" type="button" onclick="pausePrepTimer()">Pause</button>
+              <button class="btn btn-ghost" type="button" onclick="resetPrepTimer()">Reset</button>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="speech-heading">
+            <h2 id="speech-heading" style="margin: 0 0 4px; font-size: 1.2rem">Speech recording</h2>
+            <p class="timer-hero" id="speech-face">08:00</p>
+            <div class="progress"><span id="speech-bar" style="width: 0%"></span></div>
+            <div style="text-align: center; margin-top: 16px">
+              <button class="record-btn" type="button" aria-label="Record speech" onclick="toggleSpeechRecording()"></button>
+              <p id="speech-status" style="margin-top: 12px">Ready to record</p>
+              <div class="wave" id="speech-wave" aria-hidden="true" style="justify-content: center; margin: 12px 0">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="toggle"><span>Allow camera</span><button class="switch" type="button" aria-label="Allow camera" onclick="toggleSwitch(this)"></button></div>
+              <label class="muted" style="display: block; margin-top: 12px">Microphone
+                <select style="margin-left: 8px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line)">
+                  <option>Built-in Microphone</option>
+                  <option>External USB Mic</option>
+                </select>
+              </label>
+              <div class="actions-row" style="justify-content: center; margin-top: 8px">
+                <a class="btn btn-accent" href="feedback.html">See feedback report</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../js/interactions.js"></script>
+  </body>
+</html>
